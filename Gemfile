@@ -54,7 +54,9 @@ gem 'acts-as-taggable-on', '~> 2.3.1'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'execjs'
+gem 'therubyracer'
 
 # To use debugger
 # gem 'debugger'
