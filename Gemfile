@@ -58,5 +58,8 @@ gem 'capistrano'
 gem 'execjs'
 gem 'therubyracer'
 
+gem 'passenger'
+
+
 # To use debugger
 # gem 'debugger'
