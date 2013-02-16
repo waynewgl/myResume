@@ -70,8 +70,7 @@
 
                       <%  if  !user_article.content.nil? %>
 
-                          <p><%= raw truncate user_article.content.to_s.strip, length: 260%></p>
-
+                          <%=raw truncate strip_tags(user_article.content.strip.to_s) , :length=>300%>
                       <%end%>
 
                     </div>

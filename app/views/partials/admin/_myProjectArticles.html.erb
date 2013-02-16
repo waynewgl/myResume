@@ -73,7 +73,9 @@
 
           <div id="article_content_html_<%= article.id %>" style="  word-wrap: break-word; border-top: 1px solid #000000;">
 
-                <%=raw truncate article.content.to_s , :length=>400%>
+
+                  <%=raw truncate strip_tags(article.content.strip.to_s) , :length=>300%>
+
 
           </div>
 
