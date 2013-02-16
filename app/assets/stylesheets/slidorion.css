@@ -7,7 +7,7 @@
     top: -140px;
 	margin-left: -384px;
 	padding: 10px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("background_image1.jpg"); /* Can replace this with any pattern or color */
     border-radius: 10px;
     outline: none;
 	border: 1px solid #bbb;

@@ -33,7 +33,7 @@
         </div>
   </div>
 
-  <div class="">
+  <div style="position: relative;top: -15px;">
 
     <ul class="toplinks_links" >
       <li>
@@ -43,7 +43,7 @@
             <a href="#" id="user_login">Login / Sign In   &nbsp;  &nbsp; OR   &nbsp;</a>
 
         <% else %>
-            <p><h4><%= link_to "Resume Setting: #{session[:user_login]}", url_for(:controller => :admin, :action => :edit_profile)%> </h4>   </p>
+            <p ><h4><%= link_to "Resume Setting: #{session[:user_login]}", url_for(:controller => :admin, :action => :edit_profile)%> </h4>   </p>
             <p><%= link_to "Log out", url_for(:controller => :admin, :action => :logout)%></p>
 
         <% end%>
@@ -76,7 +76,7 @@
 </div>
 
 
-<div id="header" class="clearfix shadow" >
+<div id="header" class="clearfix shadow"  style="position: relative;top: 40px;">
 
    <% if !session[:user_login].nil? &&!session[:user_login_id].nil?  %>
       <div id="nav" class="clearfix" style="position: relative;right: 200px; width: 650px;" >
