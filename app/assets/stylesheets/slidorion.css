@@ -76,7 +76,7 @@
 }
 
 #accordion > .link-content {
-	height: 100px;			/* This height needs to be changed as it depends on the accordion height and number of tabs */
+	height: 60px;			/* This height needs to be changed as it depends on the accordion height and number of tabs */
 	font-weight: normal;
 	font-size: 13px;
 	line-height:20px;
