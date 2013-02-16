@@ -115,10 +115,11 @@ b,strong {font-weight:700;}
 
 /* Top links menu */
 #toplinks{
-    background-color:#fafafa;
+
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+
     height: 100px;
     padding:0 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
 
     -webkit-box-shadow:0 0 12px #bbb;
     -moz-box-shadow:0 0 10px #bbb;

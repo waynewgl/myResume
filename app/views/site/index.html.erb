@@ -1,60 +1,88 @@
+<style>
 
-<div id="slidorion" >
-
-
-  <div id="slider">
-
-        <%for article in @user_articles_images %>
+  .slder_header_title{
 
 
-            <% if !article[:image].nil? %>
-
-                    <div id="slide<%= @count%>" class="slide">
-
-                      <%= link_to image_tag(article[:image], :alt => "home image", :width => 488, :height => 400), {:controller=>"site", :action => :article_detail,:article_info=>article[:article][:id]} %>
-
-                    </div>
-
-                <% @count = @count+1 %>
-
-            <%else%>
-
-                    <div id="slide<%= @count%>" class="slide">
-
-                      <%= link_to image_tag("spiderman.jpg", :alt => "home image", :width => 488, :height => 400) %>
-
-                    </div>
-                <% @count = @count+1 %>
-            <%end%>
+      border-radius: 30px;
+      border:1px solid #fafafa;
+      -webkit-box-shadow:0 0 12px #bbb;
+      -moz-box-shadow:0 0 10px #bbb;
+      box-shadow:0 0 10px #bbb;
+      outline: none;
+      background-color: #ffebcd; width: 1000px; position: relative; left: 0px; font-family:Lucida Console;
+  }
 
 
-        <% end %>
-   </div>
-
-    <div style="height: 500px;overflow: scroll; width: 350px; height: 410px;">
-
-      <div id="accordion">
-
-        <%for article in @user_articles_images %>
+</style>
 
 
-            <div class="link-header"><%=article[:title] %>  (Author: <%=article[:owner] %> ) </br> Created at  <%= article[:created_at] %></div>
-            <div class="link-content">
-              <%=raw article[:content] %>
-            </div>
 
-        <%end%>
+<div>
+
+
+    <div id="slidorion" >
+
+      <div class="slder_header_title" >
+
+        <p style="font-weight: bold; color: #000000f;position: relative;left: 250px;">The most popular projects. Click image to see the detail</p>
+
 
       </div>
 
-    </div>
+
+      <div id="slider">
+
+            <%for article in @user_articles_images %>
 
 
-  </div>
+                <% if !article[:image].nil? %>
+
+                        <div id="slide<%= @count%>" class="slide">
+
+                          <%= link_to image_tag(article[:image], :alt => "home image", :width => 600, :height => 400), {:controller=>"site", :action => :article_detail,:article_info=>article[:article][:id]} %>
+
+                        </div>
+
+                    <% @count = @count+1 %>
+
+                <%else%>
+
+                        <div id="slide<%= @count%>" class="slide">
+
+                          <%= link_to image_tag("spiderman.jpg", :alt => "home image", :width => 600, :height => 400) %>
+
+                        </div>
+                    <% @count = @count+1 %>
+                <%end%>
+
+
+            <% end %>
+       </div>
+
+        <div style="height: 280px; width: 400px; overflow: scroll;">
+
+          <div id="accordion">
+
+            <%for article in @user_articles_images %>
+
+
+                <div class="link-header"><%=article[:title] %>  (Author: <%=article[:owner] %> ) </br> Created at  <%= article[:created_at] %></div>
+                <div class="link-content">
+                  <%=raw article[:content] %>
+                </div>
+
+            <%end%>
+
+          </div>
+
+        </div>
+
+
+      </div>
 
 
 
-
+</div>
 
 <%= render :partial => 'partials/site/content' -%>
 
