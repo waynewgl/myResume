@@ -764,8 +764,8 @@ input.submitButton:hover
 
 #toplinks ul{list-style:none;margin:0;text-align:right;}
 #toplinks ul li{position: relative;top: -90px;  display:inline-block;font-size:11px;margin:15px 0 12px 15px;}
-#toplinks ul li a{color:#797777;}
-#toplinks ul li a:hover{color:#2c2b2b;text-decoration:none;}
+#toplinks ul li a{color:#ffffff;}
+#toplinks ul li a:hover{color:#000000;text-decoration:none;}
 
 /* Main navigation menu */
 #nav{

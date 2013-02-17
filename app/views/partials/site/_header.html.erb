@@ -1,9 +1,9 @@
 
 
-<div id="toplinks">
+<div id="toplinks" style="background-image: url(<%= asset_path 'bg11.jpg' %>);">
 
 
-  <div class="clearfixTitle">
+  <div class="clearfixTitle" >
 
 
 
@@ -33,9 +33,9 @@
         </div>
   </div>
 
-  <div style="position: relative;top: -15px;">
+  <div style="position: relative;top: -15px; ">
 
-    <ul class="toplinks_links" >
+    <ul class="toplinks_links">
       <li>
 
         <% if  session[:user_login].nil? %>
@@ -43,8 +43,8 @@
             <a href="#" id="user_login">Login / Sign In   &nbsp;  &nbsp; OR   &nbsp;</a>
 
         <% else %>
-            <p ><h4><%= link_to "Resume Setting: #{session[:user_login]}", url_for(:controller => :admin, :action => :edit_profile)%> </h4>   </p>
-            <p><%= link_to "Log out", url_for(:controller => :admin, :action => :logout)%></p>
+            <p  style="color: white;" ><h4><%= link_to "Resume Setting: #{session[:user_login]}", url_for(:controller => :admin, :action => :edit_profile)%> </h4>   </p>
+            <p  style="color: white;"><%= link_to "Log out", url_for(:controller => :admin, :action => :logout)%></p>
 
         <% end%>
 
@@ -541,7 +541,7 @@
     {
         font-size:11px;
         font-family:Verdana,sans-serif;
-        color:#888888;
+        color:#ffffff;
         width:100px;
         background-color:transparent;
         border-style:none;
@@ -565,6 +565,8 @@
         margin-top: -32px;  /* -1 * image height / 2 */
         z-index: 99999999;
     }
+
+
 
 </style>
 
