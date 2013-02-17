@@ -120,11 +120,11 @@ b,strong {font-weight:700;}
 
     height: 60px;
     padding:0 30px;
-    width: 1050px;
+    width: 1008px;
 
     position: relative;
 
-    left: -25px;
+    left: -3px;
 
     -webkit-box-shadow:0 0 12px #bbb;
     -moz-box-shadow:0 0 10px #bbb;
