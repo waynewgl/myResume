@@ -26,7 +26,7 @@ b,strong {font-weight:700;}
     width:1060px;
     margin: auto;
     position: relative;
-    top: -160px;
+    top: -110px;
     /* Style */
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
     border-radius: 1px;
@@ -138,7 +138,7 @@ b,strong {font-weight:700;}
     background-image: url("bg12.png");
 
     width: 1250px;
-    height: 300px;
+    height: 260px;
 
     -webkit-box-shadow:0 0 12px #e6e8e8;
     -moz-box-shadow:0 0 10px #e6e8e8;
