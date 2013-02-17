@@ -28,8 +28,7 @@ b,strong {font-weight:700;}
     position: relative;
     top: -160px;
     /* Style */
-    background-image: url("bg13.png");
-    background-size: 160%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
     border-radius: 1px;
     border:1px solid #fafafa;
     -webkit-box-shadow:0 0 12px #bbb;
@@ -137,8 +136,8 @@ b,strong {font-weight:700;}
 .background_s_image{
     
     background-image: url("bg12.png");
-    
-    width: 650px;
+
+    width: 1250px;
     height: 300px;
 
     -webkit-box-shadow:0 0 12px #e6e8e8;
