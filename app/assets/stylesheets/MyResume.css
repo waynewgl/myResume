@@ -22,14 +22,14 @@ b,strong {font-weight:700;}
 /* Main wrappers */
 #wrapper1240{background-color:#fff;margin:20px auto;width:940px;}
 #wrapper960{
-    background-color:#fff;
     margin:35px auto;
     width:1060px;
     margin: auto;
     position: relative;
     top: -160px;
     /* Style */
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("bg13.png");
+    background-size: 160%;
     border-radius: 1px;
     border:1px solid #fafafa;
     -webkit-box-shadow:0 0 12px #bbb;
