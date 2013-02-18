@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    color: #000000;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,9 +55,7 @@ table {
 
 
 body, html {
-	background-image: url("bg11.jpg");
-    background-repeat:no-repeat;
-    background-size: 500%;
+
     height:100%;
     margin: auto;
     line-height:20px;
@@ -93,7 +92,7 @@ h4 {
 a:link, a:active, a:visited {
 	border:none;
 	outline:none;
-	color:#072B29;
+	color:#000000;
 }
 #header {
 	width:1000px;

@@ -7,27 +7,35 @@
     top: -140px;
 	margin-left: -384px;
 	padding: 10px;
-    background-image: url("background_image1.jpg"); /* Can replace this with any pattern or color */
-    border-radius: 10px;
-    outline: none;
-	border: 1px solid #bbb;
-	-webkit-box-shadow: 0 0 34px #bbb;
-	-moz-box-shadow: 0 0 34px #bbb;
-	box-shadow: 0 0 34px #bbb;
+    background-image: url("header_bg.png"); /* Can replace this with any pattern or color */
+
 }
 
 #slider {
-	width: 600px;			/* Set to slider width */
+	width: 580px;			/* Set to slider width */
 	height: 280px;			/* Set to slider height */
 	position: relative;
 	float: left;
 	overflow: hidden;		/* Hides the animations */
+
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #bbb;
+    -webkit-box-shadow: 0 0 34px #bbb;
+    -moz-box-shadow: 0 0 34px #bbb;
+    box-shadow: 0 0 34px #bbb;
 }
 
 #slider > div {
 	position:absolute;
 	width:100%;
 	height:100%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #bbb;
+    -webkit-box-shadow: 0 0 34px #bbb;
+    -moz-box-shadow: 0 0 34px #bbb;
+    box-shadow: 0 0 34px #bbb;
 }
 
 #accordion {
@@ -35,13 +43,12 @@
 	height: 350px;			/* Set to image height */
 	font-family: Verdana;
 	background: #eee;
-	-webkit-box-shadow: -3px 0px 3px -1px rgba(51,51,51,0.3);
-	-moz-box-shadow: -3px 0px 3px -1px rgba(51,51,51,0.3);
-	box-shadow: -3px 0px 3px -1px rgba(51,51,51,0.3);
-	position: relative;
-	z-index:999;
-	overflow: hidden;
-	float: left;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #bbb;
+    -webkit-box-shadow: 0 0 34px #bbb;
+    -moz-box-shadow: 0 0 34px #bbb;
+    box-shadow: 0 0 34px #bbb;
 }
 
 #accordion > .link-header {

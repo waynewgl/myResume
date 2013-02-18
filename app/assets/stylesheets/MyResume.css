@@ -4,11 +4,11 @@
 
 
 /* HTML elements */
-body{background-color:#fff;color:#fff;font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:13px;line-height:1.6em;}
+body{background-color:#fff;color:#000000;font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:13px;line-height:1.6em;}
 
 
 
-a{color:#a54569;text-decoration:none;}
+a{color:#000000;text-decoration:none;}
 a:hover{color:#333;text-decoration:none;}
 a img{border:none;}
 h1,h2,h3,h4{clear:left;color:#5c5a5a;font-weight:400;margin:0.7em 0;font-family:'Yanone Kaffeesatz';}
@@ -26,15 +26,10 @@ b,strong {font-weight:700;}
     width:1060px;
     margin: auto;
     position: relative;
-    top: -110px;
+    top: 170px;
     /* Style */
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
-    border-radius: 1px;
-    border:1px solid #fafafa;
-    -webkit-box-shadow:0 0 12px #bbb;
-    -moz-box-shadow:0 0 10px #bbb;
-    box-shadow:0 0 10px #bbb;
-    outline: none;
+    background-image: url("header_bg.png");
+
 
 }
 #wrapper760{background-color:#fff;margin:20px auto;width:760px;}
@@ -52,8 +47,7 @@ b,strong {font-weight:700;}
     padding:15px 30px;
     position: relative;
     top: -110px;
-    background-color:#fafafa;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #fafafa;
     -webkit-box-shadow:0 0 12px #bbb;
@@ -72,8 +66,6 @@ b,strong {font-weight:700;}
     top: -310px;
     width: 600px;
     left: 30px;
-    background-color:#fafafa;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
     border-radius: 1px;
     border:1px solid #fafafa;
     -webkit-box-shadow:0 0 12px #bbb;
@@ -107,7 +99,7 @@ b,strong {font-weight:700;}
     padding:15px 50px;
     background-color:#fff;
 
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
 
 }
 #extended a{text-decoration:underline;}
@@ -115,7 +107,9 @@ b,strong {font-weight:700;}
 /* Top links menu */
 #toplinks{
 
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
+
+    color: #000000;
 
     height: 60px;
     padding:0 30px;
@@ -125,20 +119,26 @@ b,strong {font-weight:700;}
 
     left: -3px;
 
-    -webkit-box-shadow:0 0 12px #bbb;
-    -moz-box-shadow:0 0 10px #bbb;
-    box-shadow:0 0 10px #bbb;
-    outline: none;
-
 }
 
+.accordion_block{
+
+
+    background-image: url("header_bg.png");
+
+    border-radius: 10px;
+    border:1px solid #2c2b2b;
+    -webkit-box-shadow:0 0 12px #e6e8e8;
+    -moz-box-shadow:0 0 10px #e6e8e8;
+    box-shadow:0 0 10px #e6e8e8;
+    outline: none;
+}
 
 .background_s_image{
     
-    background-image: url("bg12.png");
+    background-image: url("header_bg.png");
 
-    width: 1250px;
-    height: 260px;
+    height: 590px;
 
     -webkit-box-shadow:0 0 12px #e6e8e8;
     -moz-box-shadow:0 0 10px #e6e8e8;
@@ -230,7 +230,7 @@ input.submitButton:hover
     word-wrap:break-word ;
     top: -90px;
     width: 500px;
-    background-image: url("background_image1.jpg");
+    background-image: url("header_bg.png");
     font-size:12px;
     font-family:Verdana,sans-serif;
     font-weight:bold;
@@ -334,17 +334,13 @@ input.submitButton:hover
 
 .about_site_button_style{
 
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     font-size:11px;
+    background-color: transparent;
     font-family:Verdana,sans-serif;
     font-weight:bold;
-    color: #000000;
     border-radius: 10px;
-    border:1px solid #2c2b2b;
-    -webkit-box-shadow:0 0 32px #e6e8e8;
-    -moz-box-shadow:0 0 30px #e6e8e8;
-    box-shadow:0 0 30px #e6e8e8;
-    outline: 2px;
+
 }
 
 .about_site_button_style a
@@ -355,7 +351,7 @@ input.submitButton:hover
 }
 .about_site_button_style:hover
 {
-    background-image: url("background_image1.jpg");
+    background-image: url("header_bg.png");
 
     border-style:solid;
     border-color:#BBBBBB;
@@ -392,7 +388,7 @@ input.submitButton:hover
 }
 .comments:hover
 {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-style:solid;
     border-color:#BBBBBB;
     border-width:1px;
@@ -411,7 +407,7 @@ input.submitButton:hover
     /* Style */
     height: 50px;
     padding:20px 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 20px;
     border:1px solid #e6e8e8;
     -webkit-box-shadow:0 0 10px #e6e8e8;
@@ -428,7 +424,7 @@ input.submitButton:hover
     /* Style */
 
     padding:20px 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #e6e8e8;
     -webkit-box-shadow:0 0 10px #e6e8e8;
@@ -442,7 +438,7 @@ input.submitButton:hover
 .article_content_text{
 
     padding:0 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 0px;
     border:1px solid #e6e8e8;
     -webkit-box-shadow:0 0 10px #e6e8e8;
@@ -460,7 +456,7 @@ input.submitButton:hover
     width: 160px;
     left: -20px;
     padding:0 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #2c2b2b;
     -webkit-box-shadow:0 0 32px #e6e8e8;
@@ -475,7 +471,7 @@ input.submitButton:hover
 
 .index_blocks{
 
-    background:transparent; /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
 
     border-bottom: 1px solid #aaa;
 
@@ -495,7 +491,7 @@ input.submitButton:hover
     -moz-box-shadow:0 0 30px #e6e8e8;
     box-shadow:0 0 30px #e6e8e8;
     outline: 1px;
-    background-image: url("background_image1.jpg");
+    background-image: url("header_bg.png");
 }
 
 .comment_list_block  {
@@ -574,7 +570,7 @@ input.submitButton:hover
     height: 500px;
     left: 630px;
     padding:0 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #2c2b2b;
     -webkit-box-shadow:0 0 32px #e6e8e8;
@@ -591,7 +587,7 @@ input.submitButton:hover
     height: 500px;
     left: 630px;
     padding:0 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 30px;
     -webkit-box-shadow:0 0 32px #e6e8e8;
     -moz-box-shadow:0 0 30px #e6e8e8;
@@ -608,7 +604,7 @@ input.submitButton:hover
     left: 100px;
     height: 300px;
     padding:0 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     -webkit-box-shadow:0 0 32px #e6e8e8;
     -moz-box-shadow:0 0 30px #e6e8e8;
     box-shadow:0 0 30px #e6e8e8;
@@ -624,7 +620,7 @@ input.submitButton:hover
     width: 250px;
     left: 30px;
     height: 320px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 10px;
     border:1px solid #2c2b2b;
     -webkit-box-shadow:0 0 22px #e6e8e8;
@@ -672,7 +668,7 @@ input.submitButton:hover
     width: 750px;
     height: 2550px;
     top: 80px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #2c2b2b;
     -webkit-box-shadow:0 0 22px #e6e8e8;
@@ -704,8 +700,7 @@ input.submitButton:hover
     position: relative;
     top: -110px;
     height: 2650px;
-    background-color:#fafafa;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #fafafa;
     -webkit-box-shadow:0 0 12px #bbb;
@@ -721,7 +716,7 @@ input.submitButton:hover
     width: 200px;
     top: 140px;
 
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 30px;
     border:1px solid #fafafa;
     -webkit-box-shadow:0 0 12px #bbb;
@@ -747,7 +742,7 @@ input.submitButton:hover
     bottom: 90px;
     width: 600px;
     background-color:#fafafa;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #fafafa;
     -webkit-box-shadow:0 0 12px #bbb;
@@ -766,7 +761,7 @@ input.submitButton:hover
     left:-50px;
     width: 800px;
     background-color:#fafafa;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #fafafa;
     -webkit-box-shadow:0 0 12px #bbb;
@@ -792,7 +787,7 @@ input.submitButton:hover
     position: relative;
     top: -175px;
     left: 35px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     text-align: center;
     display: block;
     width: 250px;
@@ -812,6 +807,7 @@ input.submitButton:hover
     margin-left:25px;
     position:relative;
     top: -10px;
+    color: #ffffff;
 
 }
 #nav ul li a{color:#797777;display:block;font-size:12px;padding-top:0;text-transform:uppercase;}
@@ -876,13 +872,7 @@ img.alignleft,img.aligncenter,img.alignright{background:#fff;padding:4px;margin-
     top: -150px;
     width: 400px;
     height: 100px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
-    border-radius: 1px;
-    border:1px solid #fafafa;
-    -webkit-box-shadow:0 0 12px #bbb;
-    -moz-box-shadow:0 0 10px #bbb;
-    box-shadow:0 0 10px #bbb;
-    outline: none;
+    background-image: url("header_bg.png");
 
 }
 .clearfixTitle:hover{background-color:gray;}
@@ -930,6 +920,7 @@ img.alignleft,img.aligncenter,img.alignright{background:#fff;padding:4px;margin-
 
 .site_intro {
     height: 30px;
+    color: #ffffff;
 
 }
 .site_intro a {
