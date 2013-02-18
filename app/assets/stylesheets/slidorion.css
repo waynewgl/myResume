@@ -17,6 +17,8 @@
 	position: relative;
 	float: left;
 	overflow: hidden;		/* Hides the animations */
+    position: relative;
+    left: -10px;
 
     border-radius: 10px;
     outline: none;
@@ -39,10 +41,10 @@
 }
 
 #accordion {
-	width: 400px;			/* Set to accordion width */
+	width: 420px;			/* Set to accordion width */
 	height: 350px;			/* Set to image height */
 	font-family: Verdana;
-	background: #eee;
+    background-image: url("header_bg.png"); /* Can replace this with any pattern or color */
     border-radius: 10px;
     outline: none;
     border: 1px solid #bbb;
@@ -56,7 +58,7 @@
 	font-size: 12px;
 	font-weight: bold;
 	color: #333;
-	background: #ededed;
+    background-image: url("header_bg.png"); /* Can replace this with any pattern or color */
 	background: -moz-linear-gradient(top, #ededed 59%, #dcdcdc 100%);
 	background: -webkit-linear-gradient(top, #ededed 59%,#dcdcdc 100%);
 	background: -o-linear-gradient(top, #ededed 59%,#dcdcdc 100%);
@@ -71,7 +73,7 @@
 }
 
 #accordion > .link-header:hover {
-	background: #ededed;
+    background-image: url("header_bg.png"); /* Can replace this with any pattern or color */
 	cursor: pointer;
 }
 
@@ -90,7 +92,7 @@
 	margin: 0;
 	padding: 16px;
 	border: none;
-	background: #d6d6d6;
+    background-image: url("header_bg.png"); /* Can replace this with any pattern or color */
 	background: -moz-linear-gradient(top, #d6d6d6 0%, #ffffff 10%);
 	background: -webkit-linear-gradient(top, #d6d6d6 0%,#ffffff 10%);
 	background: -o-linear-gradient(top, #d6d6d6 0%,#ffffff 10%);

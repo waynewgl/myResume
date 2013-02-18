@@ -157,7 +157,7 @@ b,strong {font-weight:700;}
     left: 950px;
     width: 80px;
     background-color:#fafafa;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #2c2b2b;
     -webkit-box-shadow:0 0 12px #e6e8e8;
@@ -174,7 +174,7 @@ b,strong {font-weight:700;}
     height: 600px;
     width: 600px;
     padding:0 30px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
+    background-image: url("header_bg.png");
     border-radius: 1px;
     border:1px solid #2c2b2b;
     -webkit-box-shadow:0 0 32px #e6e8e8;
