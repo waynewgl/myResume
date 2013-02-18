@@ -17,8 +17,7 @@
 	position: relative;
 	float: left;
 	overflow: hidden;		/* Hides the animations */
-    position: relative;
-    left: -10px;
+
 
     border-radius: 10px;
     outline: none;
