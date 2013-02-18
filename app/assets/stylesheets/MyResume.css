@@ -570,7 +570,7 @@ input.submitButton:hover
     height: 500px;
     left: 630px;
     padding:0 30px;
-    background-image: url("header_bg.png");
+    background-color: #d3d3d3;
     border-radius: 1px;
     border:1px solid #2c2b2b;
     -webkit-box-shadow:0 0 32px #e6e8e8;
