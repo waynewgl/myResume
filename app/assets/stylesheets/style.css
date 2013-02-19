@@ -57,10 +57,15 @@ table {
 body, html {
 
     height:100%;
+    width: 100%;
     margin: auto;
     line-height:20px;
 	font-size:14px;
 	color:#333;
+    background-image: url(bg11.jpg);
+    background-repeat: no-repeat;
+    background-size: 500%;
+
 	font-family: Helvetica, Tahoma, sans-serif;
 	font-weight:normal;
 }

@@ -8,7 +8,14 @@
 	margin-left: -384px;
 	padding: 10px;
     background-image: url("header_bg.png"); /* Can replace this with any pattern or color */
+    background-color: #b0c4de;
 
+    border-radius: 20px;
+    border:1px solid #fafafa;
+    -webkit-box-shadow:0 0 12px #bbb;
+    -moz-box-shadow:0 0 10px #bbb;
+    box-shadow:0 0 10px #bbb;
+    outline: none;
 }
 
 #slider {
