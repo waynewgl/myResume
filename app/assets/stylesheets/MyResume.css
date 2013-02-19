@@ -883,6 +883,13 @@ img.alignleft,img.aligncenter,img.alignright{background:#fff;padding:4px;margin-
     background-image: url("header_bg.png");
     background-color: #faf0e6;
 
+    border-radius: 10px;
+    border:1px solid #fafafa;
+    -webkit-box-shadow:0 0 12px #bbb;
+    -moz-box-shadow:0 0 10px #bbb;
+    box-shadow:0 0 10px #bbb;
+    outline: none;
+
 
 }
 .clearfixTitle:hover{background-color:gray;}
