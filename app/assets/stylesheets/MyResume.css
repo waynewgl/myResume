@@ -691,6 +691,7 @@ input.submitButton:hover
     height: 2550px;
     top: 80px;
     background-image: url("header_bg.png");
+    background-color: #fafafa;
     border-radius: 1px;
     border:1px solid #2c2b2b;
     -webkit-box-shadow:0 0 22px #e6e8e8;
