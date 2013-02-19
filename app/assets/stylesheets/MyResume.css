@@ -421,6 +421,8 @@ input.submitButton:hover
     height: 50px;
     padding:20px 30px;
     background-image: url("header_bg.png");
+    background-color:#fafafa;
+
     border-radius: 20px;
     border:1px solid #e6e8e8;
     -webkit-box-shadow:0 0 10px #e6e8e8;
@@ -438,6 +440,8 @@ input.submitButton:hover
 
     padding:20px 30px;
     background-image: url("header_bg.png");
+    background-color:#fafafa;
+
     border-radius: 1px;
     border:1px solid #e6e8e8;
     -webkit-box-shadow:0 0 10px #e6e8e8;
@@ -452,6 +456,8 @@ input.submitButton:hover
 
     padding:0 30px;
     background-image: url("header_bg.png");
+    background-color:#fafafa;
+
     border-radius: 0px;
     border:1px solid #e6e8e8;
     -webkit-box-shadow:0 0 10px #e6e8e8;
@@ -505,6 +511,8 @@ input.submitButton:hover
     box-shadow:0 0 30px #e6e8e8;
     outline: 1px;
     background-image: url("header_bg.png");
+    background-color:#fafafa;
+
 }
 
 .comment_list_block  {
@@ -560,6 +568,7 @@ input.submitButton:hover
 
     top: -100px;
     left: -100px;
+    background-color:#fafafa;
 
     background:transparent; /* Can replace this with any pattern or color */
 }
