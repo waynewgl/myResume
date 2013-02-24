@@ -217,7 +217,7 @@ class AdminController < ApplicationController
     h=Hash.new
 
 
-    @available_skills=["IPhone","Objective c","Android","Java",  "Win Phone","C#", "C++","Ruby","Ruby On Rails","Asp.net","VB.net","Perl","PHP","Javascript","Oracle","MYSQL"]
+    @available_skills=["IPhone","Objective C","Android","Java","J2EE(Spring)", "J2EE(Structs)",  "WinPhone","C#", "C++","Ruby","Ruby On Rails","Asp.net","VB.net","Perl","PHP","PHP(WordPress)","JQUERY", "Javascript","Oracle","MYSQL"]
 
     user_id=session[:user_login_id]
 
