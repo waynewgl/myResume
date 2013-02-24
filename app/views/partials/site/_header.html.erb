@@ -111,7 +111,7 @@
 
     <div id='loginError' style="width:300px; display:none;border: 1px solid #bbb; padding:4px 4px 4px 4px;"></div>
 
-    <h1>User Log in <%= link_to(image_tag("close_pop.png",:id=>"close_image", :alt => "", :width => 50, :height => 50, :style=>"position:relative;left:80px; top:-30px;")) %></h1>
+    <h1>User Log in <%= link_to(image_tag("close_pop.png",:id=>"close_image_login", :alt => "", :width => 50, :height => 50, :style=>"position:relative;left:80px; top:-30px;")) %></h1>
 
 
     <table border="0">
@@ -152,7 +152,7 @@
 
     <div id='account-error' style="width:300px; display:none;border: 1px solid #bbb; padding:4px 4px 4px 4px;"></div>
 
-    <h1>User Register <%= link_to(image_tag("close_pop.png",:id=>"close_image", :alt => "", :width => 50, :height => 50, :style=>"position:relative;left:80px; top:-30px;")) %></h1>
+    <h1>User Register <%= link_to(image_tag("close_pop.png",:id=>"close_image_register", :alt => "", :width => 50, :height => 50, :style=>"position:relative;left:80px; top:-30px;")) %></h1>
 
 
     <table border="0">
@@ -374,9 +374,16 @@
 
 
 
-        $('#close_image').click(function(e) {
+        $('#close_image_login').click(function(e) {
 
             $('#login_fields').trigger('close');
+
+            e.preventDefault();
+
+
+        })
+
+        $('#close_image_register').click(function(e) {
 
             $('#account_fields').trigger('close');
 
@@ -384,6 +391,7 @@
 
 
         })
+
 
 
         function isValidEmailAddress(emailAddress) {

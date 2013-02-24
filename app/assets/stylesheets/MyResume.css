@@ -401,7 +401,7 @@ input.submitButton:hover
 }
 .comments:hover
 {
-    background-image: url("header_bg.png");
+    background-color: #ffffff;
     border-style:solid;
     border-color:#BBBBBB;
     border-width:1px;
@@ -475,9 +475,10 @@ input.submitButton:hover
     width: 160px;
     left: -20px;
     padding:0 30px;
+    background-color: #faf0e6;
     background-image: url("header_bg.png");
-    border-radius: 1px;
-    border:1px solid #2c2b2b;
+    border-radius: 30px;
+    border:5px solid  #b0c4de;
     -webkit-box-shadow:0 0 32px #e6e8e8;
     -moz-box-shadow:0 0 30px #e6e8e8;
     box-shadow:0 0 30px #e6e8e8;

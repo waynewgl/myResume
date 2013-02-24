@@ -62,9 +62,11 @@ body, html {
     line-height:20px;
 	font-size:14px;
 	color:#333;
-    background-image: url(bg11.jpg);
-    background-repeat: no-repeat;
-    background-size: 500%;
+    background: url(bg11.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 	font-family: Helvetica, Tahoma, sans-serif;
 	font-weight:normal;

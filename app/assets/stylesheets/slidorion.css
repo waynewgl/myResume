@@ -47,7 +47,7 @@
 }
 
 #accordion {
-	width: 420px;			/* Set to accordion width */
+	width: 380px;			/* Set to accordion width */
 	height: 350px;			/* Set to image height */
 	font-family: Verdana;
     background-image: url("header_bg.png"); /* Can replace this with any pattern or color */
