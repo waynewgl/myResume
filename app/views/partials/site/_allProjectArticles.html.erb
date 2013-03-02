@@ -21,8 +21,11 @@
                                <h5 style="font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:20px;"> <%= raw user_article.title%></h5>
                            <%end%>
 
-                           <%  if  !user_article.tag.nil? %>
-                               <h6 class="tagCloud" style=" width: 250px; word-wrap: break-word; position: relative;left: 310px; top: 10px; font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:12px;">Tags: <%= raw user_article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></h6>
+                           <%  if  !user_article.tag.nil?
+
+                                tags = user_article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+                           %>
+                               <h6 class="tagCloud" style=" width: 250px; word-wrap: break-word; position: relative;left: 310px; top: 10px; font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:12px;">Tags: <%= raw  truncate tags.to_s.strip, :length=>80, :separator => ',' %></h6>
                            <%end%>
 
                          </div>
