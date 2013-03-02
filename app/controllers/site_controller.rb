@@ -34,13 +34,13 @@ class SiteController < ApplicationController
     #@usersResumes = User.limit(10).order("rate_number desc").all
 
 
-    users = User.limit(50).order("created_at desc").all
+    users = User.limit(50).order("created_at asc").all
 
       for user in users
 
         user_article_hash = Hash.new
 
-        userArticle = user.articles.limit(1).order('created_at desc').all
+        userArticle = user.articles.limit(1).order('created_at asc').all
 
         user_article_hash[:article]= userArticle[0]
 

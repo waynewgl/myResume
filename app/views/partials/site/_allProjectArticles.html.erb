@@ -10,7 +10,7 @@
     <% for user_article in @user_articles %>
 
 
-              <%  if  !user_article.nil? %>
+              <%  if  !user_article.nil?  &&  !user_article.content.nil? &&  !user_article.content.blank?%>
 
                   <div class="index_blocks_projects">
 
@@ -71,6 +71,10 @@
                       <%  if  !user_article.content.nil? %>
 
                           <%=raw truncate strip_tags(user_article.content.strip.to_s) , :length=>300%>
+
+                      <%else %>
+
+                            <p>no description...</p>
                       <%end%>
 
                     </div>
