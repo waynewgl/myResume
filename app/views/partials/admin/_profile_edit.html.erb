@@ -328,7 +328,7 @@
 
               <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 390px; font-size: 14px; "><%= f.label :title , "Proessional Profile:",:style=>"width:200px;"%><%= f.text_area :intro,:id=>"intro",:value=>@user_avatar_ori.intro,  :class=> "redactor_qual", :style => "width:350px;height:200px;"%></p>
 
-              <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 390px; font-size: 14px;"> <%= f.label :title , "Programming Skills: (Press CTRL to select multiple skills)",:style=>"width:200px;"%>   <%= f.select :skills, options_for_select(@available_skills), {}, {:multiple => true, :class => "chzn-select", :style => "width:390px;height:200px;" } %>
+              <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 390px; font-size: 14px;"> <%= f.label :title , "Programming Skills: (Click to select multiple skills)",:style=>"width:200px;"%>   <%= f.select :skills, options_for_select(@available_skills), {}, {:multiple => true, :class => "chzn-select", :style => "width:390px;height:200px;" } %>
 
               <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 400px; font-size: 14px; "> <%= f.label :title , "Technical skills (Note:please separate each paragraph by @)",:style=>"width:200px;"%><br>
 
@@ -455,8 +455,13 @@
 
 <script>
 
-    $(document).ready(
 
+
+
+    $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});
+
+
+    $(document).ready(
 
           function(){
                 var csrf_token = $('meta[name=csrf-token]').attr('content');
@@ -480,8 +485,8 @@
                                 'table', 'link', '|'],
                             focus: false,
                             minHeight:200,
-                            minWidth:400,
-                            autoresize: false
+                            minWidth:350,
+                            autoresize: true
                         }
                 );
 

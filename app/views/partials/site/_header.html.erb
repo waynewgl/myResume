@@ -163,12 +163,7 @@
              <input type='text' name='account_login' id='account_login' placeholder='login' /> <br/>
            </td>
          </tr>
-         <tr>
-           <td><h4>Name :</h4></td>
-           <td>
-             <input type="text" name='account_name' id='account_name' placeholder="Name" required="">
-           </td>
-         </tr>
+
          <tr>
            <td><h4>Email :</h4></td>
            <td>
@@ -317,7 +312,6 @@
                 url:'/admin/create_account',
                 data:{
                     login: $('#account_login').val(),
-                    name:$('#account_name').val() ,
                     password: $('#account_password').val(),
                     password_repeat: $('#account_password_repeat').val(),
                     email: $('#email').val()},

@@ -38,4 +38,6 @@
 
 //= require jquery.coda-slider-3.0.min
 
+//= require chosen.jquery
+
 //= require_tree .

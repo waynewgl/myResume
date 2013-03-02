@@ -12,15 +12,15 @@ class AdminController < ApplicationController
 
   def  delete_article
 
-
-
     logger.info "now we got article id #{params[:article_id]}"
 
 
     if !params[:article_id].nil?
 
 
-      deleted_article= Article.where("id = ?", params[:article_id].to_i).first
+      art_id = params[:article_id].to_i
+
+      deleted_article= Article.where("id = ?",art_id).first
 
 
         deleteAttachments = deleted_article.attachments.all
@@ -35,16 +35,16 @@ class AdminController < ApplicationController
            end
         end
 
-        deleted_article_attachment= ArticlesAttachment.delete_all(["article_id = ?", params[:article_id].to_i])
+        deleted_article_attachment= ArticlesAttachment.delete_all(["article_id = ?", art_id])
 
 
-        deleted_article =Article.delete(["id = ?", params[:article_id].to_i])
+        deleted_article =Article.delete(["id = ?",art_id])
 
 
-        delete_comments= Comment.delete_all(["commentable_id = ?", params[:article_id].to_i])
+        delete_comments= Comment.delete_all(["commentable_id = ?", art_id])
 
 
-        delete_user_article= ArticlesUsers.delete_all(["article_id = ?", params[:article_id].to_i])
+        delete_user_article= ArticlesUsers.delete_all(["article_id = ?",art_id])
 
 
 
@@ -198,9 +198,11 @@ class AdminController < ApplicationController
 
       end
 
-    logger.info "now we have got profile skills  #{skills_selected}"
+      session[:user_account_name]= @user_update.name
 
-    h[:message] = "user detail is updated"
+      logger.info "now we have got profile skills  #{skills_selected}"
+
+      h[:message] = "user detail is updated"
       render :inline => h.to_json
       return
 
@@ -565,27 +567,6 @@ class AdminController < ApplicationController
   end
 
 
-  def find_voucher_results
-    @vouchers = nil
-    @results = false
-    lf = params[:searchstring]
-    if !lf.nil? && lf.length > 2
-      if lf[0,1] == '*'
-        searchstring = '%'+lf[1,lf.length] + "%"
-      else
-        searchstring = lf + "%"
-      end
-      @vouchers = RechargeCard.where('pin like ?', searchstring).limit(25).order('pin desc')
-
-      @results = true
-      v2 = TelephoneCard.where('pin like ?', searchstring).limit(25).order('pin desc')
-      if !v2.nil?
-        @vouchers = @vouchers + v2
-      end
-    end
-    render :partial => 'partials/admin/find_voucher_results'
-  end
-
 
   def logout
 
@@ -603,7 +584,7 @@ class AdminController < ApplicationController
 
       logger.info " #{params['name']}    #{params['login']}  and #{params['password']}  and email  #{params['email']} "
 
-      if params['login'].blank? || params['password'].blank?  || params['name'].blank?
+      if params['login'].blank? || params['password'].blank?
         render :inline => 'please input all required fields'
         return
       elsif !params['password'].eql?(params['password_repeat'])

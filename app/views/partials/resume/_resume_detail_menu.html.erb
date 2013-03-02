@@ -1,5 +1,5 @@
 <ul>
-  <li><%= link_to "Resumes Circle", url_for(:controller => :site, :action => :index)%></li>
+  <li><%= link_to "Home", url_for(:controller => :site, :action => :index)%></li>
   <li><%= link_to "Projects' Circle", url_for(:controller => :site, :action => :allProjects)%></li>
   <% if !session[:user_login].nil? &&!session[:user_login_id].nil?  %>
       <li><%= link_to "Resume Setting", {:controller => :admin, :action => :edit_profile, :user=>session[:user_login_id]} ,:id=>"bg_flash"%></li>

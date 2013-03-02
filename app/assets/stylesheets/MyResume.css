@@ -364,12 +364,11 @@ input.submitButton:hover
 }
 .about_site_button_style:hover
 {
-    background-image: url("header_bg.png");
-
+    background-color: gray;
     border-style:solid;
     border-color:#BBBBBB;
     border-width:1px;
-    color: #000000;
+    color: #ffffff;
 
 }
 .about_site_button_style a:hover
@@ -921,7 +920,6 @@ img.alignleft,img.aligncenter,img.alignright{background:#fff;padding:4px;margin-
 
 
 }
-.clearfixTitle:hover{background-color:gray;}
 
 
 * html .clearfix{height:1%;}

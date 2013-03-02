@@ -21,6 +21,7 @@
  *= require sudo_slider
  *= require jquery.fancybox-1.3.4
  *= require menu
-  *= require coda-slider
+ *= require coda-slider
+ *= require chosen
 
  */
