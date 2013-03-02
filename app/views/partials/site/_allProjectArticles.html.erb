@@ -22,7 +22,7 @@
                            <%end%>
 
                            <%  if  !user_article.tag.nil? %>
-                               <h6 class="tagCloud" style="width: 250px; word-wrap: break-word; position: relative;left: 350px; top: 10px; font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:12px;">Tags: <%= raw (truncate user_article.tag_list.map { |t| link_to t, tag_path(t) }.join(', '), :length=>90) %></h6>
+                               <h6 class="tagCloud" style="width: 350px; word-wrap: break-word; position: relative;left: 320px; top: 10px; font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:12px;">Tags: <%= raw (truncate user_article.tag_list.map { |t| link_to t, tag_path(t) }.join(', '), :length=>90) %></h6>
                            <%end%>
 
                          </div>
