@@ -14,7 +14,7 @@
 
           </div>
             <%  if  !@article_detail_info.tag.nil? %>
-                <h6 style="position: relative;left: 340px; font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:12px;">Tags: <%= @article_detail_info.tag %></h6>
+                <h6 style="width: 300px; word-wrap: break-word; position: relative;left: 310px; font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:12px;">Tags: <%= truncate @article_detail_info.tag, :length=>150 %></h6>
             <%end%>
 
 
