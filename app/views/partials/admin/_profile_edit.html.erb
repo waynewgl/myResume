@@ -337,13 +337,9 @@
 
               <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 390px; font-size: 14px; "><%= f.label :title , "Proessional Profile:",:style=>"width:200px;"%><%= f.text_area :intro,:id=>"intro",:value=>@user_avatar_ori.intro,  :class=> "redactor_qual", :style => "width:350px;height:200px;"%></p>
 
-              <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 390px; font-size: 14px;"> <%= f.label :title , "Programming Skills: (Click to select multiple skills)",:style=>"width:200px;"%>   <%= f.select :skills, options_for_select(@available_skills), {}, {:multiple => true, :class => "chzn-select", :style => "width:390px;height:200px;" } %>
+              <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 390px; font-size: 14px;"> <%= f.label :title , "Programming Skills: (Click to select multiple skills)",:style=>"width:200px;"%>   <%= f.select :skills, options_for_select(@available_skills), {}, {:multiple => true, :class => "chzn-select", :tabindex=> "8", :style => "width:390px;height:200px;" } %>
 
-              <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 400px; font-size: 14px; "> <%= f.label :title , "Technical skills (Note:please separate each paragraph by @)",:style=>"width:200px;"%><br>
-
-                <%= f.text_area :other_skills,:id=>"Other_skills",  :class=> "redactor_qual",:value=>@user_avatar_ori.other_skills, :placeHolder=> "Web Design Assertively exploit wireless initiatives rather than synergistic core competencies... etc..." , :style => "width:350px;height:200px;"%></p> <br/> <br/>
-
-
+                <br/> <br/>
               <div style="position: relative;left: 160px; top: 20px; border: 1px; width: 390px;
 
                       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==); /* Can replace this with any pattern or color */
@@ -361,6 +357,14 @@
                 </div>
 
               </div>
+
+
+              <p style="padding:10px;position: relative;top: 40px; left: 150px;width: 400px; font-size: 14px; "> <%= f.label :title , "Technical skills (Note:please separate each paragraph by @)",:style=>"width:200px;"%><br>
+
+                <%= f.text_area :other_skills,:id=>"Other_skills",  :class=> "redactor_qual",:value=>@user_avatar_ori.other_skills, :placeHolder=> "Web Design Assertively exploit wireless initiatives rather than synergistic core competencies... etc..." , :style => "width:350px;height:200px;"%></p>
+
+
+
               <div style="padding:10px;position: relative;top: 40px; left: 150px; width: 390px; font-size: 14px;"> <%= f.label :title , "Education Qualifications:"%><%= f.text_area :qalification,:id=>"qalification",:value=>@user_avatar_ori.qalification,  :class=> "redactor_qual", :style => "width:350px;height:200px;"%></div>
 
               <div style="padding:10px;position: relative;top: 40px; left: 150px; width: 390px; font-size: 14px;"> <%= f.label :title , "Work Experiences:"%><%= f.text_area :experience,:id=>"experience",:value=>@user_avatar_ori.experience,  :class=> "redactor_qual", :style => "width:350px;height:200px;"%></div>
