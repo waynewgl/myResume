@@ -82,19 +82,28 @@
         <%end%>
 
 
+        $(".chzn-select").chosen();
+        $(".chzn-select-deselect").chosen({allow_single_deselect:true});
+
+
+
         <%  if !@selected_force.nil?
 
         @selected_force.each do |c|  %>
 
 
             $("#edit_profile_others_skills option").each(function () {
-                if ($(this).val() ==  '<%= c %>')
+                if ($(this).val() ==  '<%= c %>'){
                     $(this).attr('selected', 'selected');
+                }
             });
+
 
         <%  end
 
         end%>
+
+
 
 //        $("#edit_profile_others_selected_style").each(function () {
 //            if ($(this).val() == '2')
@@ -456,9 +465,6 @@
 <script>
 
 
-
-
-    $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});
 
 
     $(document).ready(
