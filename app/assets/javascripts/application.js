@@ -28,7 +28,7 @@
 //= require jquery.easing
 
 //= jquery-ui-1.9.2.custom
-//= require jquery-ui
+//= require jquery-ui-1.9.2.custom
 //= require jquery
 //= require menu
 
